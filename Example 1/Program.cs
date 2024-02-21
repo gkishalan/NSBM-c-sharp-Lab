@@ -10,12 +10,19 @@ namespace Example_1
     {
         static void Main(string[] args)
         {
-            
-            Console.WriteLine("NSBM");
-            Console.WriteLine("Hi");
+
+            int baseNumber = 5;
+            int exponent = 3;
+            int result = 1;
+
+            for (int i = 0; i < exponent; i++)
+            {
+                result *= baseNumber;
+            }
+
+            Console.WriteLine($"The result of {baseNumber} raised to the power of {exponent} is: {result}");
 
             Console.ReadLine();
-
-
         }
     }
+}
