@@ -11,16 +11,22 @@ namespace Example_1
         static void Main(string[] args)
         {
 
-            int baseNumber = 5;
-            int exponent = 3;
+            //Defining the base and exponent 
+            int baseNumber = 3;
+            int exponent = 4;
+
+            //Initilize the result to 1
             int result = 1;
 
+            //Itarate exponent times
             for (int i = 0; i < exponent; i++)
             {
+                //Multiply result by baseNumber in each itaration
                 result *= baseNumber;
             }
 
-            Console.WriteLine($"The result of {baseNumber} raised to the power of {exponent} is: {result}");
+            //Print the result 
+            Console.WriteLine($"The result of {baseNumber} raised to the power of {exponent} is : {result}");
 
             Console.ReadLine();
         }
