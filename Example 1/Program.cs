@@ -16,25 +16,21 @@ namespace Example_1
              * Do not use any math library functions.*/
             //We can use 3 method for this question 
 
-            //Using loop method 
+            //Using Math.Pow mathod
 
-            //Defining the base and exponent 
+            // Define integer variables representing the base number and the exponent
             int baseNumber = 3;
             int exponent = 4;
 
-            //Initilize the result to 1
-            int result = 1;
 
-            //Itarate exponent times
-            for (int i = 0; i < exponent; i++)
-            {
-                //Multiply result by baseNumber in each itaration
-                result *= baseNumber;
-            }
+            // Calculate the result of raising the base number to the power of the exponent
+            // Note: Math.Pow method requires double type parameters, so we explicitly cast the integer variables to double
+            double result = Math.Pow(baseNumber, exponent);
 
-            //Print the result 
-            Console.WriteLine($"The result of {baseNumber} raised to the power of {exponent} is : {result}");
+            // Display the result of the power operation
+            Console.WriteLine($"The result of {baseNumber} raiesd to power of {exponent} is : {result}");
 
+            // Wait for user input before closing the console window
             Console.ReadLine();
         }
     }
